@@ -16,15 +16,15 @@ public class _01UnaryOperations {
         i /= 1;
         // i = i / 1;
 
+
         // i = i + 1;
         // rewrite i;
-
         i++;
+
+        i--;
+
         // but i + 1 don`t rewrite i;
         // if you want to rewrite use i = i + 1;
-
-
-
         System.out.println (i);
         System.out.println (i+1);
 
