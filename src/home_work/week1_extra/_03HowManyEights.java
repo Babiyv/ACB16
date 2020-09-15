@@ -14,6 +14,15 @@ public class _03HowManyEights {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number: ");
         int numb = sc.nextInt();
+        int result = 0;
+
+        while (numb > 0) {
+            if ((numb % 10) == 8) {
+            result++;
+            }
+            numb /= 10;
+        }
+        System.out.println("Result: " + result);
 
 
     }
