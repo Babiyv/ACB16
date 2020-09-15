@@ -26,6 +26,5 @@ public class _05IsItFibonacci {
         } else {
             System.out.println("Not a Fibonacci number");
         }
-
     }
 }
