@@ -13,18 +13,25 @@ public class _05IsItFibonacci {
         int n = sc.nextInt();
         System.out.println();
 
-        int f1 = 1;
+        int f;
+        int f1 = 0;
         int f2 = 1;
+        int a = 1;
         while (f2 <= n){
-            int c = f2;
-            f2 = f1 + f2;
-            f1 = c;
+            f = f1 + f2;
+            f1 = f2;
+            f2 = f;
+            a++;
         }
 
-        if ( f1 == n){
-            System.out.println("It`s a Fibonacci number");
+        if ( f1 == n & n > 0){
+            System.out.println("It`s a Fibonacci number. φ" + n + "=" + a);
         } else {
-            System.out.println("Not a Fibonacci number");
+            System.out.println("Not a Fibonacci number. -1");
         }
+
+
+
+
     }
 }
