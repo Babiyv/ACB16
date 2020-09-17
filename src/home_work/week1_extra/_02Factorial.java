@@ -9,7 +9,6 @@ public class _02Factorial {
         Scanner sc = new Scanner (System.in);
         System.out.print("Enter number: ");
         int enterNumber = sc.nextInt();
-        System.out.println(); // перенос на следующую строку;
 
         int [] array = new int [enterNumber+1]; // +1 - чтобы не было нулевой ячейки иначе, при умножениее на ноль, все накроется;
 //        заполнение ячеек массива:

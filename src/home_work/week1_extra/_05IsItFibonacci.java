@@ -11,7 +11,6 @@ public class _05IsItFibonacci {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number: ");
         int n = sc.nextInt();
-        System.out.println();
 
         int f;
         int f1 = 0;

@@ -24,6 +24,5 @@ public class _03HowManyEights {
         }
         System.out.println("Result: " + result);
 
-
     }
 }

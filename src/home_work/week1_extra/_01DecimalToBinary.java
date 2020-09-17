@@ -10,7 +10,7 @@ public class _01DecimalToBinary {
         System.out.print("Enter a decimal number system: ");
         int i = sc.nextInt();
         System.out.print("In binary system: ");
-        for (; i != 0 ;) {
+        while (i != 0) {
             int a = i % 2;
             i /= 2;
             System.out.print(a);

@@ -11,7 +11,6 @@ public class _04FindFibonacci {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number > 0: ");
         int n = sc.nextInt();
-        System.out.println();
 
         int f = 1;
         int f0 = 0;
