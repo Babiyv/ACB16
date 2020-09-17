@@ -23,10 +23,11 @@ public class _04FindFibonacci {
             f0 = f;
             a++;
         }
-        if (n > 0)
-        System.out.println("Number " + n + " is: φ" + f);
-        else
+        if (n > 0) {
+            System.out.println("Number " + n + " is: φ" + f);
+        } else {
             System.out.println("Invalid number!");
+        }
 
 
 
