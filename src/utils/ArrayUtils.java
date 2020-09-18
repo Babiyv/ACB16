@@ -45,12 +45,26 @@ public class ArrayUtils {
         System.out.println();
     }
 
-    public static void arithmeticMean(int[] array){
+    public static void arithmeticMeanArray(int[] array){
         int am = 0;
         for (int a = 0; a < array.length; a++){
             am = am + array[a];
         }
         System.out.println("Arithmetic mean of " + Arrays.toString(array) + " is: " + am);
+    }
+
+    public static void findMinAndMaxInArray (int [] array){
+        int a = 1;
+        int b = 0;
+        for (int n = 0; n < array.length; n++){
+            if (a > array[n]){
+                a = array[n];
+            }
+            if  (b < array[n]){
+                b = array[n];
+            }
+        }
+        System.out.println("Min is: " + a + "; Max is: " + b + ".");
     }
 
 

@@ -9,7 +9,7 @@ public class _02ArithmeticMean {
         Scanner sc = new Scanner(System.in);
 
         int [] array = {1, 2, 3, 4, 0};
-        ArrayUtils.arithmeticMean(array);
+        ArrayUtils.arithmeticMeanArray(array);
 
     }
 }
