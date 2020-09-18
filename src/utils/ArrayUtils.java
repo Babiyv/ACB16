@@ -1,5 +1,7 @@
 package utils;
 
+import java.util.Arrays;
+
 public class ArrayUtils {
 
 //    public static <return_data_type><name(verb)>(<input_data>)
@@ -41,6 +43,14 @@ public class ArrayUtils {
             System.out.print(array[i] + " ");
         }
         System.out.println();
+    }
+
+    public static void arithmeticMean(int[] array){
+        int am = 0;
+        for (int a = 0; a < array.length; a++){
+            am = am + array[a];
+        }
+        System.out.println("Arithmetic mean of " + Arrays.toString(array) + " is: " + am);
     }
 
 
