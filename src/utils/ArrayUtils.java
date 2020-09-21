@@ -54,17 +54,39 @@ public class ArrayUtils {
     }
 
     public static void findMinAndMaxInArray (int [] array){
-        int a = 1;
-        int b = 0;
+        int min = 1;
+        int max = 0;
         for (int n = 0; n < array.length; n++){
-            if (a > array[n]){
-                a = array[n];
+            if (min > array[n]){
+                min = array[n];
             }
-            if  (b < array[n]){
-                b = array[n];
+            if  (max < array[n]){
+                max = array[n];
             }
         }
-        System.out.println("Min is: " + a + "; Max is: " + b + ".");
+        System.out.println("Min is: " + min + "; Max is: " + max + ".");
+    }
+
+    public static void  swapMinMaxInArray (int [] array) {
+        int min = 1;
+        int max = 0;
+        int nMin = 0;
+        int nMax = 0;
+        for (int n = 0; n < array.length; n++){
+            if (min > array[n]){
+                min = array[n];
+                nMin = n;
+            }
+            if  (max < array[n]){
+                max = array[n];
+                nMax = n;
+            }
+        }
+        int n = array[nMin];
+        array[nMin] = array[nMax];
+        array[nMax] = n;
+        System.out.println("array[" + nMin + "]: " + array[nMin]);
+        System.out.println("array[" + nMax + "]: " + array[nMax]);
     }
 
 
