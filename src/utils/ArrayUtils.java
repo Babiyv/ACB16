@@ -158,6 +158,31 @@ public class ArrayUtils {
         return array;
     }
 
+    public static int[] createAndFeelArrayRandomUnder100 (int sizeArray, int minInt, int maxInt){
+        int[] array = new int[sizeArray];
+        for (int n = 0; n < array.length; n++) {
+            double random0 = Math.random() * 100;
+            int random = (int)random0;
+            if (random < minInt){
+                random = random + minInt;
+            } if (random > maxInt){
+                random = random - (100 - maxInt);
+            }
+            array[n] = random;
+        }
+        return array;
+    }
+
+    public static int howManyEvenNumbersInArray (int[] array){
+        int i = 0;
+        for (int n = 0; n < array.length; n++){
+            if (array[n] % 2 == 0){
+                i++;
+            }
+        }
+        return i;
+    }
+
 
 
 
