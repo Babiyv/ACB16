@@ -144,6 +144,20 @@ public class ArrayUtils {
         return sum;
     }
 
+    public static int[] almostRandom (int[] array){
+        for (int i = 0; i < array.length; i++){
+            double random1 = Math.random() * 100;
+            int random = (int)random1;
+            array[i] = random;
+            if (i % 2 == 0 & array[i] % 2 != 0){
+                array[i]++;
+            } if (i % 2 != 0 & array[i] % 2 == 0){
+                array[i]++;
+            }
+        }
+        return array;
+    }
+
 
 
 
