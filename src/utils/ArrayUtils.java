@@ -183,6 +183,16 @@ public class ArrayUtils {
         return i;
     }
 
+    public static int[] splitArray(int[] arr, int start, int end){
+        int i = 0;
+        int[] split = new int[end - start];
+        for (int n = start; n < end; n++){
+            split[i] = arr[n];
+            i++;
+        }
+        return split;
+    }
+
 
 
 
