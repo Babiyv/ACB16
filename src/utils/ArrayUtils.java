@@ -193,6 +193,14 @@ public class ArrayUtils {
         return split;
     }
 
+    public static int[] copyArray(int[] array){
+        int[] copyAr = new int[array.length];
+        for (int n = 0; n < array.length; n++){
+            copyAr[n] = array[n];
+        }
+        return copyAr;
+    }
+
 
 
 
