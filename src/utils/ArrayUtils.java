@@ -1,6 +1,7 @@
 package utils;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ArrayUtils {
 
@@ -53,7 +54,7 @@ public class ArrayUtils {
         System.out.println("Arithmetic mean of " + Arrays.toString(array) + " is: " + am);
     }
 
-    public static void findMinAndMaxInArray (int [] array){
+    public static void findMinAndMaxInArray(int[] array){
         int min = 1;
         int max = 0;
         for (int n = 0; n < array.length; n++){
@@ -67,7 +68,7 @@ public class ArrayUtils {
         System.out.println("Min is: " + min + "; Max is: " + max + ".");
     }
 
-    public static void  swapMinMaxInArray (int [] array) {
+    public static void swapMinMaxInArray(int[] array){
         int min = 1;
         int max = 0;
         int nMin = 0;
@@ -89,5 +90,23 @@ public class ArrayUtils {
         System.out.println("array[" + nMax + "]: " + array[nMax]);
     }
 
+    public static void findNumberInArray(int[] array){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number that you need to find in array: ");
+        int number = sc.nextInt();
+        int calc = 0;
+        for (int n = 0; n < array.length; n++) {
+            if (array[n] == number) {
+                calc++;
+            }
+        }
+        if (calc == 1){
+            System.out.println("Integer " + number + " occurs in array: " + calc + " time.");
+        } else if (calc > 1) {
+            System.out.println("Integer " + number + " occurs in array: " + calc + " times.");
+        } else {
+            System.out.println("Nothing found...");
+        }
+    }
 
 }
