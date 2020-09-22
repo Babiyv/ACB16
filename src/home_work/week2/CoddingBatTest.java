@@ -5,26 +5,19 @@ import java.util.Arrays;
 public class CoddingBatTest {
     public static void main(String[] args) {
 
-        int [] nums = {1, 2, 3, 4, 5, 6}; // -> {2, 3, 1}
-        int [] rev = new int[nums.length];
+        int [] nums = {1}; // -> 14 | {3} -> 3 |{} -> 0;
+        int answer = 100500;
 
-        /*rev[0] = nums[1];
-        rev[1] = nums[2];
-        rev[2] = nums[0];*/
-
-        rev[rev.length-1] = nums[0];
-        int i = nums.length-1;
-        while (i != 0){
-            rev[i-1] = nums[i];
-            i--;
+        if (nums.length > 1){
+            answer = nums[0] + nums[1];
         }
-        int a = 0;
-        while (a < nums.length){
-            nums[a] = rev[a];
-            a++;
+        if (nums.length == 1){
+            answer = nums[0];
         }
+        if (nums.length == 0){
+            answer = 0;
+        }
+        System.out.println(answer);
 
-        System.out.println(Arrays.toString(nums));
-        System.out.println("fin");
     }
 }
