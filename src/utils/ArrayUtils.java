@@ -90,10 +90,8 @@ public class ArrayUtils {
         System.out.println("array[" + nMax + "]: " + array[nMax]);
     }
 
-    public static void findNumberInArray(int[] array){
+    public static void findNumberInArray(int[] array, int number){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter number that you need to find in array: ");
-        int number = sc.nextInt();
         int calc = 0;
         for (int n = 0; n < array.length; n++) {
             if (array[n] == number) {
@@ -106,6 +104,35 @@ public class ArrayUtils {
             System.out.println("Integer " + number + " occurs in array: " + calc + " times.");
         } else {
             System.out.println("Nothing found...");
+        }
+    }
+
+    public static void whichHalfOfArrayIsBigger (int[] array){
+        int n = 0;
+        int half1 = 0;
+        int half2 = 0;
+        while (n < array.length / 2){
+            half1 = half1 + array[n];
+            n++;
+        }
+        while (n < array.length){
+            half2 += array[n];
+            n++;
+        }
+        if (half1 > half2){
+            System.out.print("First half of array is bigger: {");
+            for (int a = 0; a < array.length / 2; a++){
+                System.out.print(", " + array[a]);
+            }
+            System.out.print("};");
+        } else if (half1 < half2){
+            System.out.print("Second half of array is bigger: {");
+            for (int a = array.length / 2; a < array.length; a++){
+                System.out.print(", " + array[a]);
+            }
+            System.out.print("};");
+        } else if (half1 == half2) {
+            System.out.println("Half of array " + Arrays.toString(array) + " is equal.");
         }
     }
 
