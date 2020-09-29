@@ -15,14 +15,18 @@ public class _04ScrollArray {
         if (step > 0) {
             for (int n = 0; n < step; n++) {
                 a = array[array.length - 1];
-                for (int i = array.length - 1; i > 0; array[i] = array[i - 1], i--);
+                for (int i = array.length - 1; i > 0; i--){
+                    array[i] = array[i - 1];
+                }
                 array[0] = a;
             }
         }
         if (step < 0) { // <- просто захотел дополнительно попрактиковаться и сделал "прокрутку" в обратном направлении, при вводе отрицательного количества;
             for (int n = 0; n > step; n--) {
                 a = array[0];
-                for (int i = 0; i < array.length - 1; array[i] = array[i + 1], i++);
+                for (int i = 0; i < array.length - 1; i++){
+                    array[i] = array[i + 1];
+                }
                 array[array.length - 1] = a;
             }
         }
