@@ -201,6 +201,14 @@ public class ArrayUtils {
         return copyAr;
     }
 
+    public static int[] copyPartArray (int[] fromArray, int fromIndex, int[] toArray, int toIndex, int size){
+        for (int i = 0; i < size; i++){
+            toArray[toIndex] = fromArray[fromIndex];
+            toIndex++;
+            fromIndex++;
+        }
+        return toArray;
+    }
 
 
 
