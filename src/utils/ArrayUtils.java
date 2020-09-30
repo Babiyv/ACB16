@@ -223,6 +223,24 @@ public class ArrayUtils {
         return array;
     }
 
+    public static int[] insertSort (int[] array){
+        for (int i = 0; i < array.length - 1; i++){
+            if (array[i] > array[i + 1]){
+                int a = array[i];
+                array[i] = array[i+1];
+                array[i + 1] = a;
+                for (int n = 0; n < i; n++){
+                    if (array[n] > array[i]){
+                        int b = array[n];
+                        array[n] = array[i];
+                        array[i] = b;
+                    }
+                }
+            }
+        }
+        return array;
+    }
+
 
 
 
