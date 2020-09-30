@@ -210,6 +210,19 @@ public class ArrayUtils {
         return toArray;
     }
 
+    public static int[] selectSort (int[] array){
+        for (int i = 0; i < array.length; i++){
+            for (int n = 0; n < array.length; n++){
+                if (array[n] > array[i]){
+                    int a = array[n];
+                    array[n] = array[i];
+                    array[i] = a;
+                }
+            }
+        }
+        return array;
+    }
+
 
 
 
