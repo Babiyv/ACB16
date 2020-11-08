@@ -258,7 +258,7 @@ public class ArrayUtils {
                 if (array[i] > array[i + 1]) {
 //                swap
                     int tmp = array[i];
-                    array[i] = array[i + i];
+                    array[i] = array[i + 1];
                     array[i + 1] = tmp;
                 }
             }
