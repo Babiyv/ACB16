@@ -1,4 +1,4 @@
-package week3;
+package week3.day1;
 
 public class _08Comparing {
     public static void main(String[] args) {

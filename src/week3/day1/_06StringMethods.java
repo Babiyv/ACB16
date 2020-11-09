@@ -1,4 +1,4 @@
-package week3;
+package week3.day1;
 
 import utils.ArrayUtils;
 
