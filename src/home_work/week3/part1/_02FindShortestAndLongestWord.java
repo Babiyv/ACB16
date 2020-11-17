@@ -9,7 +9,7 @@ public class _02FindShortestAndLongestWord {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите предложение:");
         String sentence = sc.nextLine();
-        String[] split = sentence.split("," + " ");
+        String[] split = sentence.split(" ");
 
         int shortest = 0;
         int longest = 0;
