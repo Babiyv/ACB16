@@ -13,7 +13,7 @@ public class _10TernaryOperator {
         }*/
 
 //       <condition> ? <then> : <else>;
-        b = i > 10 ? true : false; // <- if i > 10 than b = true, else(:) b = false
+        b = i > 10 ? true : false; // <- if i > 10 then(?) b = true, else(:) b = false
         System.out.println(b);
 
         a = i > 10 ? 100 : 0;

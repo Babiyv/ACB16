@@ -2,13 +2,12 @@ package week3.day2;
 
 public class _01_Test {
     public static void main(String[] args) {
-        System.out.println(factorial(5));
+        powerN(3, 3);
     }
-    public static int factorial(int i){
-        int factorial = 1;
-        for (int j = 1; j <= i; j++){
-            factorial *= j;
-        }
-        return factorial;
+
+    public static int powerN(int base, int n) {
+        if (n == 0) return 0;
+        int a = base;
+        return powerN(a, n - 1);
     }
 }

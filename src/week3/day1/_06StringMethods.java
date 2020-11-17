@@ -14,7 +14,7 @@ public class _06StringMethods {
         System.out.println(name.equals(name3)); // <- ответ true. Метод сравнивает сами стринги.
         System.out.println(name.equalsIgnoreCase("dima")); // <- за счет IgnoreCase перестает быть восприимчиым к регистру (большие или маленькие буквы). Потому что у большой и маленькой буквы разные бинарные номера.
 
-        System.out.println(name.compareTo(name3)); // <- ответ 0(ноль), метод сравнивает какой из стрингов больше.
+        System.out.println(name.compareTo(name3)); // <- метод сравнивает какой из стрингов больше, ответ 0(ноль).
 
         String text = "Hello my name is Vova!";
         String[] words = text.split(" "); // <- split - метод делитель, будет доходить до пробела(то что укажешь в реджекс), и вставлять вместо него то, что указано внутри метода сплит (по дефолуту там пробел).
