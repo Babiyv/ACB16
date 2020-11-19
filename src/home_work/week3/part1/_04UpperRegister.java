@@ -1,8 +1,5 @@
 package home_work.week3.part1;
 
-import utils.ArrayUtils;
-
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 /*4. Верхний регистр.
