@@ -19,7 +19,8 @@ public class _04UpperRegister {
 
     private static String toUpperCaseFirst(String incomingString) {
         String[] split = incomingString.split(" ");
-        String answer = new String();
+        String answer = "";
+
         for (int i = 0; i <split.length; i++) {
             split[i] = split[i].substring(0,1).toUpperCase() + split[i].substring(1) + " ";
             answer += split[i];
