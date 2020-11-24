@@ -29,7 +29,7 @@ public class _01CreateMatrixAndFillFive {
     private static int[][] createMatrixAndFeelRandomly(int a, int b) {
         int[][] matrix = new int[a][b];
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[a].length; j++) {
+            for (int j = 0; j < matrix[i].length; j++) {
                 matrix[i][j] = (int)(Math.random() * 100);
             }
         }
