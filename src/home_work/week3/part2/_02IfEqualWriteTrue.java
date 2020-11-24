@@ -7,11 +7,11 @@ import java.util.Scanner;
 public class _02IfEqualWriteTrue {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.println("How many lines do you want?");
         int a = sc.nextInt();
         System.out.println("How mane columns do you want?");
         int b = sc.nextInt();
-
 
         boolean[][] matrix = new boolean[a][b];
         for (int i = 0; i < matrix.length; i++) {
