@@ -3,15 +3,15 @@ package home_work.week3.part2;
 /*	3.3. Написать метод, который проверяет является ли строка палиндромом */
 public class _03CheckPalindrome {
     public static void main(String[] args) {
-        String input = "город дорог";
+        String input = "волгу див Несет тесен вид углов";
         String[] word = input.split(" ");
 
         int counter = 0;
 
         for (int i = 0; i < word.length; i++){
-            if (stringReverse(word[i]) == word[word.length - 1]){
+            if (stringReverse(word[i]).compareToIgnoreCase(word[word.length - 1 - i]) == 0){
               counter++;
-              System.out.println(stringReverse(word[i]) + word[word.length - 1]);
+//              System.out.println(stringReverse(word[i]) + word[word.length - 1 - i]);
           }
         }
 
@@ -29,9 +29,8 @@ public class _03CheckPalindrome {
         String revers = "";
         for (int i = letters.length - 1; i >= 0; i--) {
             revers += letters[i];
-            System.out.println(revers);
         }
-        System.out.println(revers);
+//        System.out.println(revers);
         return revers;
     }
 }
