@@ -21,7 +21,6 @@ public class _08DeleteRepeatedWords {
                 words[i] = "";
             }
         }
-
         ArrayUtils.printArray(words);
 
     }
